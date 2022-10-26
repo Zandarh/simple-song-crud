@@ -1,4 +1,4 @@
-# Zuri Cohort Project
+# Zuri Cohort 2 Project
 
 ## Task Covered
 
