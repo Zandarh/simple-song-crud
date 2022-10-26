@@ -1,4 +1,4 @@
-# Zuri Cohort Project
+# Zuri's SongCrud Project
 
 ## Task Covered
 
