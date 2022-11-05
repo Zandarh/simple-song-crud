@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from musicapp import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('artiste/', views.artiste_list),
+    path('artiste/<int:id>', views.artiste_detail),
+    path('song/', views.song_list),
+    path('song/<int:id>', views.song_detail),
+    path('lyrics/', views.get_lyric),
+    path('lyrics/<int:id>', views.lyrics_detail)
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
